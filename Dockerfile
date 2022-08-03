@@ -8,7 +8,7 @@ RUN dnf makecache && \
     sh /install_jdk.sh && \
     mkdir -p /minica/bin /minica/conf /minica/data
 
-ADD minica-1.0.jar /minica/bin/minica-1.0.jar
+ADD minica-1.0.0.jar /minica/bin/minica-1.0.0.jar
 ADD minica.sh /minica/bin/minica.sh
 
 RUN chmod +x /minica/bin/minica.sh && chown -R 998:998 /minica
