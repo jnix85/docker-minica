@@ -13,6 +13,6 @@ JDK_ARM64_SHA="8c23b0b9c65cfe223a07edb8752026afd1e8ec1682630c2d92db4dd5aa039204"
 
 if [ "$ARCH" == "x86_64" ]
   then wget $JDK_AMD64_URL && echo $JDK_AMD64_SHA  $JDK_AMD64 | sha256sum -c && tar xzf $JDK_AMD64 && mv jdk-17.0.4+8 /opt/openjdk/17 && rm -Rf $JDK_AMD64
-elif [ "$ARCH" == "aarch64"]
+elif [ "$ARCH" == "aarch64" ]
   then wget $JDK_ARM64_URL && echo $JDK_ARM64_SHA  $JDK_ARM64 | sha256sum -c && tar xzf $JDK_ARM64 && mv jdk-17.0.4+8 /opt/openjdk/17 && rm -Rf $JDK_ARM64
 fi
