@@ -10,6 +10,7 @@ RUN dnf makecache && \
 
 ADD minica-1.0.0.jar /minica/bin/minica-1.0.0.jar
 ADD minica.sh /minica/bin/minica.sh
+ADD application.properties /minica/bin/application.properties
 
 RUN chmod +x /minica/bin/minica.sh && chown -R 998:998 /minica
 
