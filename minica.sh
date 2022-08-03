@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export JAVA_HOME=/opt/openjdk/17
+export JAVA_HOME=/opt/openjdk/17/jdk-17.0.4+8
 export PATH=$PATH:$JAVA_HOME/bin 
 
 if [ ! -f "/minica/conf/application.properties" ]
